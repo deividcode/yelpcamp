@@ -7,9 +7,9 @@
   width: 300px;
   height: 300px;
 
-  & p{
-    color: yellow;
-  }
+}
+.hola p{
+  color: blue;
 }
 
 .carro{
