@@ -3,17 +3,13 @@ import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 
-export default defineConfig({
-  base: "https://deividcode.github.io/yelpcamp/",  
-  build: {
-    minify: false
-  },
-  plugins: [
-    // legacy({
-    //   targets: ["defaults"]
-    // }),
-    // ViteImageOptimizer({
-    //   /* pass your config */
-    // }),
-  ],
+export default defineConfig({  
+  // plugins: [
+  //   legacy({
+  //     targets: ["defaults"]
+  //   }),
+  //   ViteImageOptimizer({
+  //     /* pass your config */
+  //   }),
+  // ],
 })
