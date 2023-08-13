@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hola{
+  width: 300px;
+  height: 300px;
+
+  & p{
+    color: yellow;
+  }
+}
+
+.carro{
+  width: 500px;
+}
