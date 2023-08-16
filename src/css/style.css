@@ -1,18 +1,50 @@
+@font-face {
+  font-family: 'Archivo';
+  src: url('/src/assets/fonts/Archivo-Regular.ttf') format('truetype');  
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('/src/assets/fonts/Archivo-Medium.ttf') format('truetype');  
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('/src/assets/fonts/Archivo-Bold.ttf') format('truetype');  
+  font-weight: 700;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.hola{
-  width: 300px;
-  height: 300px;
-
+@layer components {
+  .btn-primary {
+    @apply inline-block py-4 px-6 bg-zinc-950 text-white text-sm font-medium rounded shadow-md hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
 }
-.hola p{
-  color: #202020;
+
+body{
+  font-family: 'Archivo';
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Archivo';
   font-weight: 700;
+  margin-block-end: .20em;
 }
 
-.carro{
-  width: 500px;
+p{
+  font-weight: 500;
+  margin-block-end: .5em;
+  @apply text-sm text-gray-600;
+}
+
+.lista-marcas > *{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }
