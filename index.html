@@ -2,54 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/icons/Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/Logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YelpCamp</title>
   </head>
-  <body>
-    
-    <header class="header container flex items-center h-16">
-      <a class="" href="#">
-        <img src="/src/assets/icons/Logo.svg" alt="YelpCamp" width="100" height="auto">
-      </a>
-    </header>
+  <body class="min-h-[100vh]">
+        
+    <main class="main mx-auto">      
 
-    <main class="main mx-auto">
-      <section class="hero">
-        <!-- Hero Image -->
-        <div class="h-48">
-          <img class="h-full" src="/src/assets/images/Hero Image (Tablet and Mobile).jpg" alt="camp" width="100%" height="auto">
-        </div>
-        <!-- Hero Text -->
-        <div class="container mt-5 pb-5">          
-          <h1 class="text-3xl">Explore the best camps on Earth.</h1>
-          <p>YelpCamp is a curated list of the best camping spots on Earth. Unfiltered and un biased reviews.</p>
-          <ul class="mt-4 mb-4 grid gap-2">
-            <li class="flex items-center text-gray-600">
-              <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">
-              <span class="font-sm2 font-medium">Add your own camp suggestions</span>
-            </li>           
-            <li class="flex items-center text-gray-600">
-              <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">              
-              <span class="font-sm2 font-medium">Leave reviews</span>
-            </li>   
-            <li class="flex items-center text-gray-600">
-              <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">              
-              <span class="font-sm2 font-medium">See locations for all camps</span>
-            </li>   
-          </ul>
-          
-          <a class="btn-primary" href="#">View Campgrounds</a>
+      <section class="hero grid md:grid-cols-2">        
+       
+        <div class="box-content grid lg:px-5 m-w-[600px]">
+          <!-- Header -->
+          <header class="header container flex items-center h-14 md:h-24">
+            <a class="" href="#">
+              <img src="/src/assets/icons/Logo.svg" alt="YelpCamp" width="100" height="auto">
+            </a>
+          </header>
+          <!-- Image Mobile -->
+          <div class="md:hidden h-48 sm:h-60">
+            <img class="w-full h-full" src="/src/assets/images/Hero Image (Tablet and Mobile).jpg" alt="people camping">  
+          </div>
 
-          <div class="mt-7">
-            <span class="leading-8 text-gray-600">Partnered with:</span>
-            <div class="grid grid-cols-3 items-center">
-              <img class="" src="/src/assets/icons/Airbnb.svg" alt="Airbnb">
-              <img class="" src="/src/assets/icons/Booking.svg" alt="Booking">
-              <img class="" src="/src/assets/icons/Plum Guide.svg" alt="Plum Guide">
+          <!-- Hero Text -->          
+          <div class="container md:none pt-5 pb-5">  
+            <header>
+              <h1 class="text-3xl lg:text-4xl xl:text-5xl">Explore the best camps on Earth.</h1>
+              <p class="mb-0">YelpCamp is a curated list of the best camping spots on Earth. Unfiltered and un biased reviews.</p>
+            </header>        
+            <ul class="my-4 md:my-5 grid gap-3">
+              <li class="flex items-center text-gray-600">
+                <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">
+                <span class="text-sm2 text-base font-medium">Add your own camp suggestions</span>
+              </li>           
+              <li class="flex items-center text-gray-600">
+                <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">              
+                <span class="text-sm2 text-base font-medium">Leave reviews</span>
+              </li>   
+              <li class="flex items-center text-gray-600">
+                <img class="mr-2" src="/src/assets/icons/Checkmark.svg" alt="Checkmark" width="20" height="21">              
+                <span class="text-sm2 text-base font-medium">See locations for all camps</span>
+              </li>   
+            </ul>
+            
+            <a class="btn-primary" href="#">View Campgrounds</a>
+  
+            <div class="mt-7">
+              <span class="leading-8 text-gray-600">Partnered with:</span>
+              <div class="grid grid-cols-3 items-center">
+                <img class="" src="/src/assets/icons/Airbnb.svg" alt="Airbnb">
+                <img class="" src="/src/assets/icons/Booking.svg" alt="Booking">
+                <img class="" src="/src/assets/icons/Plum Guide.svg" alt="Plum Guide">
+              </div>
             </div>
           </div>
+
         </div>
+        
+        <!-- Image Desktop -->
+        <div class="hidden md:inline-block h-[100vh]">         
+          <img class="h-full object-cover" src="/src/assets/images/Hero Image.jpg" alt="people camping" width="100%" height="auto">
+        </div>        
 
       </section>
     </main>

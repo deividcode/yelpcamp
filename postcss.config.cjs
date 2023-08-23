@@ -7,9 +7,9 @@ module.exports = {
   plugins: [
     tailwindcss(),    
     autoprefixer(),
-    purgecss({
-      content: ['index.html'],
-      css: ["src/**/*.css"]
-    }),
+    // purgecss({
+    //   // content: ['index.html'],
+    //   css: ["src/**/*.css"]
+    // }),
   ]
 }

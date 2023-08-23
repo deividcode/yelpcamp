@@ -22,7 +22,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block py-4 px-6 bg-zinc-950 text-white text-sm font-medium rounded shadow-md hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply inline-block py-4 px-6 bg-zinc-950 text-white text-sm font-medium rounded shadow-md hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 }
 
@@ -40,7 +40,8 @@ h1{
 p{
   font-weight: 500;
   margin-block-end: .5em;
-  @apply text-sm text-gray-600;
+  line-height: 1.4;
+  @apply text-sm text-gray-600 lg:text-base;
 }
 
 .lista-marcas > *{
