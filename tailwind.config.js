@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html"],
+  content: ["./index.html", "./nested/search.html"],
   theme: {
     container: {
+      center: true,
       padding: {
         DEFAULT: '1rem',
         sm: '2.2rem',
@@ -13,7 +14,8 @@ export default {
     }, 
     extend: {
       fontSize: {        
-        sm2: '0.9rem'
+        sm2: '0.9rem',
+        lg2: '1.06em'
       },   
     },
   },

@@ -1,0 +1,124 @@
+{
+  "campground": [
+    { 
+      "id": 1, 
+      "name": "Mount Ulap", 
+      "description1": "One of the most famous hikes in Benguet is Mt Ulap in Itogon.",
+      "description2": "Mount Ulap is a kilometer moderately trafficked point-to-point trail located near Tuba, Benguet, Philippines that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking.", 
+      "author": "Andrew Mike",
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977505.867251469!2d119.15896601955598!3d12.498484407277656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391099c1b2a9ea7%3A0xb91486e0a9b1db2f!2sGungal%20Rock!5e0!3m2!1ses-419!2sve!4v1693277082111!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 104.99,
+      "modalityType": "night"      
+    },
+    { 
+      "id": 2, 
+      "name": "Calaguas Islands", 
+      "description1": "A paradise of islands that can rival the white sand beaty of Boracay",
+      "description2": "A gem of islands in the Pacific Ocean, Calaguas boasts of powdery white sand beaches, crystal clear waters, and unspoiled natural resources. Located in Tinaga Island, the Mahabang Buhangin is more popular among backpackers and sunseekers and has been described as a 'mini Boracay sans the commercialization'", 
+      "author": "Patricia Taylor",
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61813.11285357693!2d122.90645306893643!3d14.46633112273417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398cf99e94a066b%3A0xfa48012905485556!2sIslas%20Calagua%2C%20Calaguas%2C%20Vinzons%2C%20Camarines%20Norte%2C%20Filipinas!5e0!3m2!1ses-419!2sve!4v1693278078358!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 95,
+      "modalityType": "night"  
+    },
+    { 
+      "id": 3, 
+      "name": "Onay Beach", 
+      "description1": "This is one of the best beach camping sites, beautiful and pristine.",
+      "description2": "Onay Beach is a long, long stretch, with one side fringed with thick vegetation and the other soaked in turquoise water. As I stood at the mouth of the main access point in the middle of the cove, I could hardly see its north end, seemingly disappearing in the droplets that the waves spray into the air.", 
+      "author": "Sofía González" ,
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7788.036551581542!2d124.9997377382985!3d12.581046522064234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330a3add347f39b9%3A0x3c1ab0df394a9675!2sOnay%20Beach!5e0!3m2!1ses-419!2sve!4v1693278405900!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 102.50,
+      "modalityType": "night" 
+    },
+    { 
+      "id": 4, 
+      "name": "Seven Sisters Waterfall", 
+      "description1": "The Seven Sisters is the 39th tallest waterfall in Norway",
+      "description2": "The Seven Sisters (Norwegian: De Syv Søstrene or Dei sju systrene, also known as Knivsflåfossen) is the 39th tallest waterfall in Norway. The 410-metre (1,350 ft) tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres (820 ft).", 
+      "author": "James Anderson" ,
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7466.22420005227!2d7.086846934114709!3d62.10648154588752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46169d60e3980a8b%3A0xeb2b7c72f3df48c7!2sCascada%20de%20las%20Siete%20Hermanas!5e0!3m2!1ses-419!2sve!4v1693278698676!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 84.9,
+      "modalityType": "night" 
+    },
+    { 
+      "id": 5, 
+      "name": "Yosemite National Park", 
+      "description1": "Yosemite Valley is a Californian glacial valley that is characterized by abundant snowfall and its great natural beauty in flora and fauna.",
+      "description2": "Yosemite National Park, one of America's first wilderness parks, is best known for its waterfalls, but within its nearly 1,200 square miles (3,108 km²) you'll find deep valleys, meadows, giant redwoods, sprawling jungle, and much more.", 
+      "author": "Elizabeth Anderson" ,
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403237.735309913!2d-119.88076887043806!3d37.853391870965474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096f09df58aecc5%3A0x2d249c2ced8003fe!2sYosemite!5e0!3m2!1ses-419!2sve!4v1693280775716!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 120,
+      "modalityType": "night" 
+    },
+    { 
+      "id": 6, 
+      "name": "Zion National Park", 
+      "description1": "This is one of the best beach camping sites, beautiful and pristine.",
+      "description2": "Within its 232 square miles are high plateaus, a maze of narrow, deep, sandstone canyons, and the Virgin River and its tributaries. Zion also has 2,000-foot Navajo Sandstone cliffs, pine- and juniper-clad slopes, and seeps, springs, and waterfalls supporting lush and colorful hanging gardens.", 
+      "author": "Teresa Torres" ,
+      "ubication": {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406128.8299814422!2d-113.37288169841784!3d37.321634926507464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80caead08844f8d9%3A0x7c2e3a15aa3656f5!2sParque%20nacional%20Zion!5e0!3m2!1ses-419!2sve!4v1693311992157!5m2!1ses-419!2sve",
+        "width": 600,
+        "height": 450,
+        "loading": "lazy",
+        "referrerpolicy": "no-referrer-when-downgrade"
+      },
+      "price": 84.5,
+      "modalityType": "night" 
+    }
+  ],
+  "comments": [
+    { 
+      "id": 1, 
+      "author": "Adam Jones",
+      "body": "Honestly one of the best experiences ever, took us a while to figure out how to get there but it was amazing!",       
+      "date": "13h",
+      "postId": 1 
+    },
+    { 
+      "id": 2, 
+      "author": "Isaac Dylan",
+      "body": "Traveling changes you as a person, you gain more perspective, this is the perfect spot to do that.",       
+      "date": "13h",
+      "postId": 1 
+    },
+    { 
+      "id": 3, 
+      "author": "Hudson Luca",
+      "body": "Definitely recommend going there, not too far and not a lot of people to ruin the experience.",       
+      "date": "13h",
+      "postId": 1 
+    }
+  ],
+  "profile": { "name": "typicode" }
+}

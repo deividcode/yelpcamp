@@ -22,9 +22,16 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block py-4 px-6 bg-zinc-950 text-white text-sm font-medium rounded shadow-md hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply inline-block py-3 px-4 bg-zinc-950 text-white text-sm font-semibold rounded hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .btn-secundary {
+    @apply inline-block py-3 px-4 bg-white text-zinc-950 text-sm font-semibold rounded border-2 hover:bg-zinc-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .transition-g{
+    @apply transition ease-out duration-300;
   }
 }
+
 
 body{
   font-family: 'Archivo';
@@ -41,7 +48,7 @@ p{
   font-weight: 500;
   margin-block-end: .5em;
   line-height: 1.4;
-  @apply text-sm text-gray-600 lg:text-base;
+  @apply text-sm text-gray-600 leading-6 lg:text-lg2;
 }
 
 .lista-marcas > *{
@@ -49,3 +56,11 @@ p{
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
+
+
+
+.menu-input:checked + .menu-mobile{
+  display: flex;  
+  right: 0;
+}
+
