@@ -21,14 +21,14 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-primary {
-    @apply inline-block py-3 px-4 bg-zinc-950 text-white text-sm font-semibold rounded hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
-  .btn-secundary {
-    @apply inline-block py-3 px-4 bg-white text-zinc-950 text-sm font-semibold rounded border-2 hover:bg-zinc-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
   .transition-g{
     @apply transition ease-out duration-300;
+  }
+  .btn-primary {
+    @apply transition-g inline-block py-3 lg:py-3.5 px-4 lg:px-5 bg-zinc-950 text-white text-sm2 font-semibold rounded hover:bg-zinc-600 focus:outline-none focus:ring-2;
+  }
+  .btn-secundary {
+    @apply transition-g inline-block py-3 lg:py-3.5 px-4 bg-white text-zinc-950 text-sm font-semibold rounded border-2 border-slate-200 hover:bg-zinc-950 hover:text-white;
   }
 }
 
@@ -57,10 +57,27 @@ p{
   align-items: center;
 }
 
-
-
 .menu-input:checked + .menu-mobile{
   display: flex;  
   right: 0;
 }
 
+.listCampground:has(span){
+  grid-template-columns: 1fr;
+
+}
+.listCampground:has(div){
+  grid-template-columns: repeat(auto-fill, minmax(260px, 325px));
+}
+
+.loader {
+  width: 50px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#f03355 95%,#0000) 50% 1px/12px 12px no-repeat,
+    radial-gradient(farthest-side,#0000 calc(100% - 14px),#ccc 0);
+  animation: l9 2s infinite linear;
+}
+@keyframes l9 {to{transform: rotate(1turn)}}

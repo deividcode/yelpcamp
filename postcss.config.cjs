@@ -8,7 +8,7 @@ module.exports = {
     tailwindcss(),    
     autoprefixer(),
     // purgecss({
-    //   // content: ['index.html'],
+    //   content: ['./index.html'],
     //   css: ["src/**/*.css"]
     // }),
   ]

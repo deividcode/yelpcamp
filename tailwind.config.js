@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./nested/search.html"],
+  content: [
+    "./index.html", 
+    "./nested/search.html",
+    "./src/js/*.js",    
+  ],
   theme: {
     container: {
       center: true,

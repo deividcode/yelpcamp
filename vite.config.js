@@ -12,6 +12,7 @@ export default defineConfig({
         nested: resolve(__dirname, 'nested/search.html'),
       },
     },
+    minify: false
   },
   // plugins: [
   //   legacy({
@@ -21,4 +22,7 @@ export default defineConfig({
   //     /* pass your config */
   //   }),
   // ],
+  server: {
+    open: '/nested/search.html',
+  },
 })
