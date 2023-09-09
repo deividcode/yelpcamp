@@ -9,41 +9,94 @@
 </head>
 <body>
   
-  <div class="flex gap-6 justify-center items-center px-6 py-2 md:py-3 lg:py-3 text-center bg-gray-950">
-    <p class="m-0 text-white text-sm font-semibold leading-normal">This project was made by <a class="text-cyan-400 underline" href="#">Jose Quintero</a> and designed by <a class="text-cyan-400 underline" href="https://www.codewell.cc/challenges">Codewell</a></p>
-    <div>
-      <img class="w-5 md:w-3" src="/src/assets/icons/Close.svg" alt="close-message">
+  <div class="flex gap-6 justify-end items-center px-6 py-2 md:py-3 lg:py-3 text-center bg-gray-950 hover:cursor-pointer">
+    <p class="w-full text-center m-0 text-white text-sm lg:text-sm2 font-semibold leading-normal">This project was made by <a class="text-cyan-400 underline" href="#">Jose Quintero</a> and designed by <a class="text-cyan-400 underline" href="https://www.codewell.cc/challenges">Codewell</a></p>
+    <div class="w-full max-w-[12px]">
+      <img class="close-banner" src="/src/assets/icons/Close.svg" alt="close-message">
     </div>
   </div>
 
-  <header class="header relative container flex justify-between items-center h-16 overflow-hidden">
-    <div>
-      <a class="" href="/index.html">
-        <img class="w-28" src="/src/assets/icons/Logo.svg" alt="YelpCamp" width="100" height="auto">
-      </a>
-    </div>
-
-    <label for="menu">
-      <img src="/src/assets/icons/Hamburger Menu.svg" alt="menu">
-    </label>
- 
-    <input type="checkbox" name="" id="menu" class="menu-input hidden">    
-
-    <div class="menu-mobile absolute right-[-100%] bottom-0 flex flex-col gap-7 w-[80vw] h-[78vh] py-9 bg-slate-900 transition-g">
-      <nav class="flex flex-col items-center text-sm2 text-white">
-        <a href="/index.html">Home</a>
-      </nav>      
-      <hr class="w-3/4 text-center mx-auto my-0 border-stone-600">
-      <div class="flex flex-col gap-6 items-center">
-        <a class="text-white" href="#">Login</a>
-        <a class="btn-primary text-black bg-white" href="#">Create an account</a>
+  <nav class="container">
+    <div class="mx-auto md:py-2 lg:py-3.5">
+      <div class="relative flex h-16 items-center justify-between">
+        
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-6 w-auto" src="/src/assets/icons/Logo.svg" alt="Your Company">
+            <div class="hidden md:flex space-x-4 ml-6">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="/nested/search.html" class="text-gray-500 text-sm2 font-medium hover:text-zinc-950" aria-current="page">Home</a>
+            </div>
+          </div>
+          <div class="sm:ml-6 hidden md:flex mix-blend-normal:block">
+            <div class="flex gap-2 items-center space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->              
+              <a href="#" class="text-gray-500 text-sm2 font-medium hover:text-zinc-950">Log In</a>
+              <a href="#" class="btn-primary text-sm">Create a account</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="nav-button-menu relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-zinc-950 hover:text-white " aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>        
+        
       </div>
     </div>
-
-  </header>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="nav-menu transition-g bg-gray-800 md:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 py-3.5">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="/nested/search.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Log In</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Create an account</a>
+        
+      </div>
+    </div>
+  </nav>
 
   <main class="container mt-1">
-    
+      
+    <article>
+
+      <div>
+        <img src="" alt="">
+        <header>
+          <h2 class="text- font-medium">Mount Ulap</h2>
+          <span>$104.99/night</span>
+        </header>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis laudantium at, ullam quod recusandae modi quae magnam natus veniam non ex error, sunt et quibusdam assumenda soluta. Natus, minima.</p>
+          <footer>
+            <cite>Submitted by Andrew Mike</cite>
+          </footer>
+        </blockquote>        
+      </div>
+
+      <div></div>
+
+    </article>    
 
   </main>
 

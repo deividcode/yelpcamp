@@ -1,4 +1,6 @@
-const URL_API = "http://localhost:3000/campground/";
+// const URL_API = "http://localhost:3000/campground/";
+
+const URL_API = 'https://mi-sitio.netlify.app/.netlify/functions/mi-funcion';
 
 async function requestApi() {
   try {
@@ -15,3 +17,6 @@ async function requestApi() {
 }
 
 export {requestApi}
+
+
+
