@@ -1,6 +1,6 @@
 // const URL_API = "http://localhost:3000/campground/";
 
-const URL_API = 'https://mi-sitio.netlify.app/.netlify/functions/mi-funcion';
+const URL_API = '/.netlify/functions/functions';
 
 async function requestApi() {
   try {

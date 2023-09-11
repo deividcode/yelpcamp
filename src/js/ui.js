@@ -20,7 +20,7 @@ class Ui{
 class Camp{
   arrCampground;  
 
-  saveCampgrounds(data){
+  saveCampgrounds(data){    
     this.arrCampground = data;
   }
 

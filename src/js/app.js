@@ -37,6 +37,10 @@ window.addEventListener('load', ()=>{
     dataApi();
   } 
 
+  if(currentURL.includes("camp.html")){
+    
+  }
+
 })
 
 
@@ -52,8 +56,9 @@ async function dataApi(){
   
   let dataAPI = await requestApi();
 
-  camp.saveCampgrounds(dataAPI)
-  camp.showCampgrounds(dataAPI);  
+  await camp.saveCampgrounds(dataAPI.campground);
+  await camp.showCampgrounds(dataAPI.campground);  
+
 }
 
 
