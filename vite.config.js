@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'nested/search.html'),
+        // nested: resolve(__dirname, 'nested/search.html'),
       },
     },
     minify: false
@@ -22,7 +22,5 @@ export default defineConfig({
   //     /* pass your config */
   //   }),
   // ],
-  server: {
-    open: '/nested/search.html',
-  },
+  
 })
