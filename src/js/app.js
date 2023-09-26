@@ -66,7 +66,7 @@ async function dataApi(){
   let dataAPI = await requestApi();
 
   await camp.saveCampgrounds(dataAPI);
-  await ui.showCampgrounds(dataAPI);  
+  await camp.showCampgrounds();  
 
 }
 

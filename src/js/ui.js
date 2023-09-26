@@ -24,8 +24,7 @@ class Ui{
   }
 
   formSearch(text){
-
-    console.log(text);
+    
     ui.removeChildElements(elListCampground);    
     ui.addSpinner(elListCampground);
 
@@ -48,8 +47,8 @@ class Ui{
   }  
 
   showCampgrounds(data){          
-    
-    this.removeChildElements(elListCampground);
+        
+    this.removeChildElements(elListCampground);    
 
     data.forEach(campground => {
         
@@ -113,17 +112,26 @@ class Ui{
 }
 
 class Camp{
-  arrCampground;  
+  constructor(){
+    this.arrCampground = null;  
+  }
 
-  saveCampgrounds(data){        
+  saveCampgrounds(data){     
+    console.log(data);
+    this.arrCampground = data;
     localStorage.setItem('arrayCamp', JSON.stringify(data));
+  }
+
+  showCampgrounds(){
+    ui.showCampgrounds(this.arrCampground.campground)
+    // ui.showCampgrounds(this.)
   }
   
   searchCampground(value, typevalue){
     
     let patternReg = value.toString();     
 
-    let arrCampground = JSON.parse(localStorage.getItem('arrayCamp'));
+    let arrCampground = this.arrCampground.campground;        
 
     const resultSearch = arrCampground.filter(obj => {  
       
