@@ -1,6 +1,6 @@
 // const URL_API = "http://localhost:3000/campground/";
 
-const URL_API = '/.netlify/functions/functions';
+const URL_API = 'https://deividcode-yelpcamp.netlify.app/.netlify/functions/campground';
 
 async function requestApi() {
   try {

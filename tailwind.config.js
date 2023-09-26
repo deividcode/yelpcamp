@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html", 
     "./nested/search.html",
+    "./nested/camp.html",
     "./src/js/*.js",    
   ],
   theme: {

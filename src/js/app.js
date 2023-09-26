@@ -9,6 +9,7 @@ const menuNav = document.querySelector('.nav-menu');
 let elFormSearch = document.querySelector('[for="searchCamp"]');
 let inputSearchCampgrounds = document.querySelector('[name="searchCampground"]');
 let elListCampground = document.querySelector('.listCampground');
+let elOneCamp = document.querySelector('.elOneCamp');
 
 
 navButtonMenu.addEventListener('click', () => {
@@ -18,9 +19,11 @@ navButtonMenu.addEventListener('click', () => {
 // URL Page
 var currentURL = window.location.href;
 
+console.log(currentURL);
 // EventListener
-window.addEventListener('load', ()=>{
-  
+
+document.addEventListener('DOMContentLoaded', ()=>{  
+    
   elCloseBanner.forEach(elHTML => {
     
     elHTML.addEventListener('click', (e) => {
@@ -31,7 +34,15 @@ window.addEventListener('load', ()=>{
     });  
   });
 
-  elFormSearch.addEventListener('submit', searchCampground);
+  if(elFormSearch){
+    elFormSearch.addEventListener('submit', (e) => {
+      
+      e.preventDefault();
+
+      ui.formSearch(inputSearchCampgrounds.value);  
+
+    });
+  }
   
   if(currentURL.includes("search.html")){
     dataApi();
@@ -39,28 +50,26 @@ window.addEventListener('load', ()=>{
 
   if(currentURL.includes("camp.html")){
     
-  }
+    let params = new URLSearchParams(window.location.search);    
+    
+    console.log(params.get("camp")); 
+    ui.getOneCampground(params.get("camp"))
+
+  }  
 
 })
 
-
 // Functions
-function searchCampground(e){
-  e.preventDefault();
-
-  camp.searchCampground(inputSearchCampgrounds.value);    
-
-}
 
 async function dataApi(){    
   
   let dataAPI = await requestApi();
 
-  await camp.saveCampgrounds(dataAPI.campground);
-  await camp.showCampgrounds(dataAPI.campground);  
+  await camp.saveCampgrounds(dataAPI);
+  await ui.showCampgrounds(dataAPI);  
 
 }
 
 
 
-export {elListCampground};
+export {elListCampground, elOneCamp};
